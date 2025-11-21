@@ -13,3 +13,9 @@ output "table_name" {
 output "github_identity_client_id" {
   value = azurerm_user_assigned_identity.github.client_id
 }
+
+output "storage_connection_string" {
+  value     = azurerm_storage_account.backend.primary_connection_string
+  sensitive = true
+}
+
