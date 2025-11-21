@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+
+# Azure Functions local settings
+src/function_app/local.settings.json
+
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+
+# VSCode
+.vscode/
+
+# Tests
+.coverage
+pytest_cache/
